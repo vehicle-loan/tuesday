@@ -46,9 +46,27 @@ public class UserPersonalDetails {
 	@OneToOne(cascade = CascadeType.ALL,mappedBy="userPersonalDetails")
 	private UserCredentials userCredentials;
 
-	@OneToOne(mappedBy="userPersonalDetails",cascade= CascadeType.ALL)
+	@OneToOne(cascade= CascadeType.ALL,mappedBy="userPersonalDetails")
 	private UserDocuments userDocuments;
 	
+	@OneToOne(cascade= CascadeType.ALL,mappedBy="userPersonalDetails")
+	private VehicleDetails vehicleDetails;
+	
+	@OneToOne(cascade= CascadeType.ALL,mappedBy="userPersonalDetails")
+	private LoanDetails loanDetails;
+	
+	@OneToOne(cascade= CascadeType.ALL,mappedBy="userPersonalDetails")
+	private UserAddressDetails userAddressDetails;
+	
+	
+	public UserAddressDetails getUserAddressDetails() {
+		return userAddressDetails;
+	}
+
+	public void setUserAddressDetails(UserAddressDetails userAddressDetails) {
+		this.userAddressDetails = userAddressDetails;
+	}
+
 	public String getMobileNumber() {
 		return mobileNumber;
 	}
@@ -130,5 +148,22 @@ public class UserPersonalDetails {
 	public void setUserCredentials(UserCredentials userCredentials) {
 		this.userCredentials = userCredentials;
 	}
+
+	public VehicleDetails getVehicleDetails() {
+		return vehicleDetails;
+	}
+
+	public void setVehicleDetails(VehicleDetails vehicleDetails) {
+		this.vehicleDetails = vehicleDetails;
+	}
+
+	public LoanDetails getLoanDetails() {
+		return loanDetails;
+	}
+
+	public void setLoanDetails(LoanDetails loanDetails) {
+		this.loanDetails = loanDetails;
+	}
 	 
+	
 }

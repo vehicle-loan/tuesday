@@ -32,11 +32,11 @@
                                 <label class="form-label">Name</label>
                                 <div class="form-flex">
                                     <div class="form-group">
-                                        <input type="text" name="firstName" id="first_name" />
+                                        <input type="text" name="firstName" id="first_name"  value="${FirstName}"/>
                                         <span class="text-input">First</span>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="lastName" id="last_name" />
+                                        <input type="text" name="lastName" id="last_name" value="${LastName }"/>
                                         <span class="text-input">Last</span>
                                     </div>
                                 </div>
@@ -45,12 +45,12 @@
                                   <div class="form-flex">
                                     <div class="form-group">
                                         <label class="form-label">Age</label>
-                                        <input type="number" name="age" id="age" />
+                                        <input type="number" name="age" id="age" value="${Age}"/>
                                         <span class="number"></span>
                                     </div>
                                     <div class="form-group">
                                         <label class="form-label">Gender</label>
-                                        <input type="text" name="gender" id="gender" />
+                                        <input type="text" name="gender" id="gender" value="${Gender}"/>
                                         <span class="text-input"></span>
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
                                     <div class="form-flex">
                                      <div class="form-group">
                                         <label class="form-label">Mobile Number</label>
-                                         <input type="tel" name="mobileNumber" id="mobile" />
+                                         <input type="tel" name="mobileNumber" id="mobile" value="${MobileNumber}"/>
                                          
                                      </div>
                                      <div class="form-group">
@@ -80,7 +80,7 @@
                                 <div class="form-flex">
                                     <div class="form-group">
                                             <label class="form-label">Flatno. / Building </label>
-                                        <input type="text" name="address" id="address" />
+                                        <input type="text" name="building" id="building" />
                                       
                                     </div>
                                     <div class="form-group">
@@ -116,17 +116,17 @@
                         
                                 <div class="form-group">
                                         <label for="employment" class="form-label">Type of Employment</label>
-                                        <input type="text" name="typeOfEmployment" id="employment" />
+                                        <input type="text" name="typeOfEmployment" id="employment" value="${ TypeOfEmployment}" />
                                     </div>
 
                                 <div class="form-group">
                                             <label for="salary" class="form-label">Annual Salary</label>
-                                            <input type="number" name="salary" id="salary" />
+                                            <input type="number" name="salary" id="salary" value ="${ Salary}"/>
                                      </div>
 
                                 <div class="form-group">
                                                 <label for="existing-emi" class="form-label">Existing EMI</label>
-                                                <input type="number" name="existingEmi" id="existing-emi" />
+                                                <input type="number" name="existingEmi" id="existing-emi" value ="${ExistingEmi }"/>
                                     </div>
                     </fieldset>
 

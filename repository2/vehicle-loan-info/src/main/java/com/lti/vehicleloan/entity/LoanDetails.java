@@ -27,7 +27,7 @@ public class LoanDetails {
 	@Column(name="LOAN_TENURE")
 	private int loanTenure;
 	
-	@Column(name="LOAN_AMOUT")
+	@Column(name="LOAN_AMOUNT")
 	private double loanAmount;
 	
 	@OneToOne
